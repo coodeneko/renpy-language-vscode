@@ -568,6 +568,39 @@
 			<string>keyword.control.flow.python</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>renpy screen statement keywords</string>
+			<key>match</key>
+			<string>(?x) \b(
+						kind|color|action|area|hovered|unhovered|clicked|modal|text_style|default|has|who|what|tag|value|theme
+					)\b
+					</string>
+			<key>name</key>
+			<string>support.type.renpy</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>renpy transform keywords</string>
+			<key>match</key>
+			<string>(?x) \b(
+						repeat|transform|fadein|fadeout|position|Position|easein|easeout|time|ui
+					)\b
+					</string>
+			<key>name</key>
+			<string>support.type.renpy</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>other renpy keyword</string>
+			<key>match</key>
+			<string>(?x) \b(
+						Character|DynamicCharacter|music|sound|movie|pause|Transform|clear
+					)\b
+					</string>
+			<key>name</key>
+			<string>support.type.python</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>(lambda)(?=\s+|:)</string>
 			<key>beginCaptures</key>
