@@ -1011,7 +1011,7 @@
     },
     "constant_placeholder": {
       "match": "(?i:(%(\\([a-z_]+\\))?#?0?\\-?[ ]?\\+?([0-9]*|\\*)(\\.([0-9]*|\\*))?([hL][a-z]|[a-z%]))|(\\{([#=\\-\\+!\\[\\].:\\w ]+)?\\})|(\\{\\/([!\\[\\].:\\w ]+)?\\})|(\\[([!\\[\\].:\\w ]+)?\\]))",
-      "name": "constant.other.placeholder.python"
+      "name": "constant.language.placeholder.renpy"
     },
     "docstrings": {
       "patterns": [
