@@ -2,7 +2,7 @@
     "name": "renpy-language-vscode",
     "displayName": "Ren'Py Language Support",
     "description": "Ren'Py language support for Visual Studio Code",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "williamd1k0",
     "engines": {
         "vscode": "^1.0.0"
@@ -19,7 +19,7 @@
         }],
         "grammars": [{
             "language": "renpy",
-            "scopeName": "source.python",
+            "scopeName": "source.renpy",
             "path": "./syntaxes/renpy.tmLanguage"
         }]
     }
