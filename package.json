@@ -1,0 +1,26 @@
+{
+    "name": "renpy-language-vscode",
+    "displayName": "Ren'Py Language Support",
+    "description": "Ren'Py language support for Visual Studio Code",
+    "version": "0.0.1",
+    "publisher": "williamd1k0",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "renpy",
+            "aliases": ["Ren'Py", "renpy"],
+            "extensions": [".rpy",".rpym"],
+            "configuration": "./renpy.configuration.json"
+        }],
+        "grammars": [{
+            "language": "renpy",
+            "scopeName": "source.python",
+            "path": "./syntaxes/renpy.tmLanguage"
+        }]
+    }
+}
