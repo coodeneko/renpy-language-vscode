@@ -2,7 +2,16 @@
     "Label": {
       "prefix": "label",
       "body": "label ${1:label_name}:\n\t${2:}",
-      "description": "Label: \nCreate a new label"
+      "description": "Label: Create a new label \n- Label statements allow the given name to be assigned to a program point. They exist solely to be called or jumped to, whether by script code or the Ren'Py config.\nUse the snippet `dochelp` or `helplabel` to see doc info."
+    },
+    "Jump": {
+      "prefix": "jump",
+      "body": "jump ${1:label_name}",
+      "description": "Jump: Jump to a label \n- The jump statement is used to transfer control to the given label.\nUse the snippet `dochelp` or `helpjump` to see doc info."
+    },
+    "Call": {
+      "prefix": "call",
+      "body": "call ${1:label_name}"
     },
     "Pause": {
       "prefix": "pause",
@@ -26,7 +35,7 @@
     },
     "Create a Character": {
       "prefix": "char",
-      "body": "define ${1:character_name} = Character(\"${2:displayable_name}\")"
+      "body": "define ${1:character_name} = Character(\"${2:displayable name}\")"
     },
     "Create a Character (NVL)": {
       "prefix": "charnvl",
@@ -36,33 +45,25 @@
       "prefix": "transitions",
       "body": "${1:fade, dissolve, pixellate, move,\nmoveinright (Also: moveinleft, moveintop, moveinbottom),\nmoveoutright (Also: moveoutleft, moveouttop, moveoutbottom),\nease (Also: easeinright, easeinleft, easeintop, easeinbottom, easeoutright, easeoutleft, easeouttop, easeoutbottom),\nzoomin, zoomout, zoominout, vpunch, hpunch, blinds, squares,\nwipeleft (Also: wiperight, wipeup, wipedown),\nslideleft (Also:  slideright, slideup, slidedown),\nslideawayleft (Also: slideawayright, slideawayup, slideawaydown),\nirisin, irisout.}"
     },
-    "Jump to a Label": {
-      "prefix": "jump",
-      "body": "jump ${1:label_name}"
-    },
-    "Call a Label": {
-      "prefix": "call",
-      "body": "call ${1:label_name}"
-    },
     "[i] Create MultiPersistent (Only PC)": {
       "prefix": "multi",
       "body": "${1:persistent_name} = MultiPersistent(\"${2:persistent_filename}\")"
     },
     "[$] Variable(Create/Modify)": {
       "prefix": "$",
-      "body": "$ ${1:variable_name} = ${2:#variable value}"
+      "body": "$ ${1:variable_name} = ${2:# variable value}"
     },
     "[$] Renpy Pause": {
       "prefix": "rpause",
       "body": "$ renpy.pause($1)\n$2"
     },
-    "[$] Movie Cutscene (All Plataforms)": {
+    "[$] Movie Cutscene (All Platforms)": {
       "prefix": "cutscene",
       "body": "$ renpy.movie_cutscene('${1:filename.extension}')"
     },
-    "[$] Save Persistent (All Plataforms)": {
+    "[$] Save Persistent (All Platforms)": {
       "prefix": "persist",
-      "body": "$ persistent.${1:value_name} = ${2:#variable value}"
+      "body": "$ persistent.${1:value_name} = ${2:# variable value}"
     },
     "[$] Save MultiPersistent (Only PC)": {
       "prefix": "multisave",
@@ -127,6 +128,17 @@
     "Ren'Py Docs": {
       "prefix": "dochelp",
       "body": "## Visit the site for documentation or help of Ren'Py engine. ##\n## Documentation:\n\t\"${1:http://www.renpy.org/doc/html/}\"\n## Wiki-Old Documentation:\n\t\"${2:http://www.renpy.org/wiki/renpy/Wiki_Home_Page}\"\n## Forum:\n\t\"${3:http://lemmasoft.renai.us/forums/viewforum.php?f=42}\"\n## Package Documentation:\n\t\"${4:https://github.com/williamd1k0/renpy-language-vscode#getting-started}\"\n\n## Warning: All snippets that start with [Py] are for Python commands and [$] are for One Line Python."
+    },
+    // Help Snippets
+    "[?] Help Label": {
+      "prefix": "helplabel",
+      "body": "# See doc: ${1:https://www.renpy.org/doc/html/label.html}",
+      "description": "Show Label statement info"
+    },
+    "[?] Help Label": {
+      "prefix": "helpjump",
+      "body": "# See doc: ${1:https://www.renpy.org/doc/html/label.html#jump-statement}",
+      "description": "Show Jump statement info"
     },
     "[Py] Assert Equal": {
       "prefix": ",ase",
